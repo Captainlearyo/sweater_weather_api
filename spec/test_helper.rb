@@ -1,0 +1,170 @@
+def load_test_data
+  @forecast_data_1 = {
+  location: {
+    name: "Dallas",
+    region: "Texas",
+    country: "United States of America",
+    lat: 32.78,
+    lon: -96.8,
+    tz_id: "America/Chicago",
+    localtime_epoch: 1705254591,
+    localtime: "2024-01-14 11:49"
+  },
+  current: {
+    last_updated_epoch: 1705254300,
+    last_updated: "2024-01-14 11:45",
+    temp_c: -10.0,
+    temp_f: 14.0,
+    is_day: 1,
+    condition: {
+      text: "Overcast",
+      icon: "//cdn.weatherapi.com/weather/64x64/day/122.png",
+      code: 1009
+    },
+    wind_mph: 10.5,
+    wind_kph: 16.9,
+    wind_degree: 20,
+    wind_dir: "NNE",
+    pressure_mb: 1028.0,
+    pressure_in: 30.37,
+    precip_mm: 0.0,
+    precip_in: 0.0,
+    humidity: 48,
+    cloud: 100,
+    feelslike_c: -17.3,
+    feelslike_f: 0.9,
+    vis_km: 16.0,
+    vis_miles: 9.0,
+    uv: 2.0,
+    gust_mph: 12.3,
+    gust_kph: 19.9
+  },
+  forecast: {
+    forecastday: [
+      {
+        date: "2024-01-14",
+        date_epoch: 1705190400,
+        day: {
+          maxtemp_c: -3.1,
+          maxtemp_f: 26.4,
+          mintemp_c: -6.5,
+          mintemp_f: 20.3,
+          avgtemp_c: -4.5,
+          avgtemp_f: 23.9,
+          maxwind_mph: 15.4,
+          maxwind_kph: 24.8,
+          totalprecip_mm: 0.0,
+          totalprecip_in: 0.0,
+          totalsnow_cm: 0.0,
+          avgvis_km: 10.0,
+          avgvis_miles: 6.0,
+          avghumidity: 27,
+          daily_will_it_rain: 0,
+          daily_chance_of_rain: 0,
+          daily_will_it_snow: 0,
+          daily_chance_of_snow: 0,
+          condition: {
+            text: "Overcast",
+            icon: "//cdn.weatherapi.com/weather/64x64/day/122.png",
+            code: 1009
+          },
+          uv: 2.0
+        },
+        astro: {
+          sunrise: "07:30 AM",
+          sunset: "05:43 PM",
+          moonrise: "10:07 AM",
+          moonset: "09:36 PM",
+          moon_phase: "Waxing Crescent",
+          moon_illumination: 9,
+          is_moon_up: 1,
+          is_sun_up: 0
+        },
+        hour: [
+          {
+            time_epoch: 1705212000,
+            time: "2024-01-14 00:00",
+            temp_c: -2.9,
+            temp_f: 26.8,
+            is_day: 0,
+            condition: {
+              text: "Clear",
+              icon: "//cdn.weatherapi.com/weather/64x64/night/113.png",
+              code: 1000
+            },
+            wind_mph: 15.4,
+            wind_kph: 24.8,
+            wind_degree: 0,
+            wind_dir: "N",
+            pressure_mb: 1026.0,
+            pressure_in: 30.31,
+            precip_mm: 0.0,
+            precip_in: 0.0,
+            snow_cm: 0.0,
+            humidity: 41,
+            cloud: 4,
+            feelslike_c: -9.5,
+            feelslike_f: 15.0,
+            windchill_c: -9.5,
+            windchill_f: 15.0,
+            heatindex_c: -2.9,
+            heatindex_f: 26.8,
+            dewpoint_c: -14.5,
+            dewpoint_f: 6.0,
+            will_it_rain: 0,
+            chance_of_rain: 0,
+            will_it_snow: 0,
+            chance_of_snow: 0,
+            vis_km: 10.0,
+            vis_miles: 6.0,
+            gust_mph: 18.6,
+            gust_kph: 30.0,
+            uv: 1.0
+          },
+          {
+            time_epoch: 1705215600,
+            time: "2024-01-14 01:00",
+            temp_c: -3.5,
+            temp_f: 25.7,
+            is_day: 0,
+            condition: {
+              text: "Clear",
+              icon: "//cdn.weatherapi.com/weather/64x64/night/113.png",
+              code: 1000
+            },
+            wind_mph: 14.8,
+            wind_kph: 23.8,
+            wind_degree: 2,
+            wind_dir: "N",
+            pressure_mb: 1027.0,
+            pressure_in: 30.31,
+            precip_mm: 0.0,
+            precip_in: 0.0,
+            snow_cm: 0.0,
+            humidity: 40,
+            cloud: 4,
+            feelslike_c: -10.3,
+            feelslike_f: 13.4,
+            windchill_c: -10.3,
+            windchill_f: 13.4,
+            heatindex_c: -3.5,
+            heatindex_f: 25.7,
+            dewpoint_c: -15.3,
+            dewpoint_f: 4.4,
+            will_it_rain: 0,
+            chance_of_rain: 0,
+            will_it_snow: 0,
+            chance_of_snow: 0,
+            vis_km: 10.0,
+            vis_miles: 6.0,
+            gust_mph: 18.6,
+            gust_kph: 30.0,
+            uv: 1.0
+          },
+          # Add more hourly data as needed
+        ]
+      }
+    ]
+  }
+}
+end
