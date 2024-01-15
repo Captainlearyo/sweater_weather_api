@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Forecast Index', type: :request do 
+RSpec.describe 'Forecasts Index', type: :request do 
   it 'Happy Path returns a list data on city forcast', :vcr do
 
     location = "Dallas,TX"

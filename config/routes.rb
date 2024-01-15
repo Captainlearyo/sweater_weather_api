@@ -10,10 +10,10 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v0 do
-      resources :forecast, only: [:index] do
-        get '/api/v0/forecast', to: 'api/v0/forecast#index'
-      end
       resources :forecast, only: [:index]
+      get '/api/v0/forecast', to: 'api/v0/forecast#index'
+      
+      resources :users, only: [:create]
     end
   end
   
