@@ -1191,7 +1191,6 @@
       "/Users/clayo/Web-Dev/3-Mod/Final/sweater_weather_api/app/controllers/api/v0/sessions_controller.rb": {
         "lines": [
           1,
-          null,
           1,
           2,
           2,
@@ -1232,6 +1231,6 @@
         ]
       }
     },
-    "timestamp": 1705362363
+    "timestamp": 1705362834
   }
 }
