@@ -1,0 +1,399 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/geocoding/v1/address?key=Yj1Vm0wVYh3N3m35oKLO7cvu1gIdnvYp&location=Dallas,TX
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 15 Jan 2024 17:28:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '795'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-2628000:
+      - '1000000000'
+      X-Ratelimit-Remaining-2628000:
+      - '999999930'
+      Ratelimit-Limit:
+      - '1000000000'
+      Ratelimit-Remaining:
+      - '999999930'
+      Ratelimit-Reset:
+      - '232280'
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - 860c2560-b3cb-11ee-bad0-91ce77d8f7aa
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"31b-x4VpaHC2R+D8GRsQ1bsUuEXVNsE"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyNCBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDI0IE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sIm9wdGlvbnMiOnsibWF4UmVzdWx0cyI6LTEsImlnbm9yZUxhdExuZ0lucHV0IjpmYWxzZX0sInJlc3VsdHMiOlt7InByb3ZpZGVkTG9jYXRpb24iOnsibG9jYXRpb24iOiJEYWxsYXMsVFgifSwibG9jYXRpb25zIjpbeyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiRGFsbGFzIiwiYWRtaW5BcmVhNVR5cGUiOiJDaXR5IiwiYWRtaW5BcmVhNCI6IkRhbGxhcyIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6IlRYIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhBWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0IjozMi43NzgyMiwibG5nIjotOTYuNzk1MTJ9LCJkaXNwbGF5TGF0TG5nIjp7ImxhdCI6MzIuNzc4MjIsImxuZyI6LTk2Ljc5NTEyfSwibWFwVXJsIjoiIn1dfV19
+  recorded_at: Mon, 15 Jan 2024 17:27:11 GMT
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/current.json?key=6af306557f524973a3010737240701&q=32.77822,-96.79512
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 15 Jan 2024 17:28:40 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Server:
+      - BunnyCDN-IL1-871
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=180
+      Via:
+      - 1.1 varnish (Varnish/6.0)
+      X-Weatherapi-Qpm-Left:
+      - '4999965'
+      X-Varnish:
+      - '135399365'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '200'
+      Cdn-Cachedat:
+      - 01/15/2024 17:28:39
+      Cdn-Edgestorageid:
+      - '940'
+      Cdn-Status:
+      - '200'
+      Cdn-Requestid:
+      - 4c6484a520bb1d40fe284340a3703135
+      Cdn-Cache:
+      - HIT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"location":{"name":"Dallas","region":"Texas","country":"United States
+        of America","lat":32.78,"lon":-96.8,"tz_id":"America/Chicago","localtime_epoch":1705339681,"localtime":"2024-01-15
+        11:28"},"current":{"last_updated_epoch":1705338900,"last_updated":"2024-01-15
+        11:15","temp_c":-10.6,"temp_f":12.9,"is_day":1,"condition":{"text":"Overcast","icon":"//cdn.weatherapi.com/weather/64x64/day/122.png","code":1009},"wind_mph":11.9,"wind_kph":19.1,"wind_degree":360,"wind_dir":"N","pressure_mb":1027.0,"pressure_in":30.33,"precip_mm":0.0,"precip_in":0.0,"humidity":77,"cloud":100,"feelslike_c":-17.9,"feelslike_f":-0.2,"vis_km":16.0,"vis_miles":9.0,"uv":2.0,"gust_mph":16.3,"gust_kph":26.3}}'
+  recorded_at: Mon, 15 Jan 2024 17:27:11 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?location=Dallas,TX&term=Italian
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer jX-UHcQRIFRsjDFvmQlwKgbU51RWhDCPgwpS1RNZ3X1QmmgKkU_T8mkv6k6eqMA02L2bCEbBMPEh3xb0blSHu8yrGiibRkB8eYmNajziLadZngJ_ISHeX1FAqaekZXYx
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Server:
+      - envoy
+      X-Zipkin-Id:
+      - a1b7b40c19182216
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Routing-Service:
+      - routing-main--useast1-74f644dc4b-ll4cp; site=public_api_v3
+      Ratelimit-Remaining:
+      - '476.0'
+      Ratelimit-Resettime:
+      - '2024-01-16T00:00:00+00:00'
+      X-B3-Sampled:
+      - '0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-127-198-useast1aprod
+      X-Extlb:
+      - 10-65-127-198-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 15 Jan 2024 17:28:40 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-dfw-kdal2120123-DFW
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "U3Nx-Vvizc6BMHiZxcuw7A", "alias": "il-bracco-dallas",
+        "name": "il Bracco", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/UJE--oDwpgTZjKeOZVvU4w/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/il-bracco-dallas?adjust_creative=sXLAy83l7EwdZjsYFbaq0A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=sXLAy83l7EwdZjsYFbaq0A",
+        "review_count": 384, "categories": [{"alias": "italian", "title": "Italian"}],
+        "rating": 4.5, "coordinates": {"latitude": 32.864895, "longitude": -96.802592},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "8416
+        Preston Center Plaza Dr", "address2": null, "address3": "", "city": "Dallas",
+        "zip_code": "75225", "country": "US", "state": "TX", "display_address": ["8416
+        Preston Center Plaza Dr", "Dallas, TX 75225"]}, "phone": "+12143610100", "display_phone":
+        "(214) 361-0100", "distance": 2882.095939975006}, {"id": "vNVxOl2SYgoXpzhVAoe2Iw",
+        "alias": "kennys-italian-kitchen-dallas", "name": "Kenny''s Italian Kitchen",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/rXmYvTUOWDgUzR6U3TW-hw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/kennys-italian-kitchen-dallas?adjust_creative=sXLAy83l7EwdZjsYFbaq0A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=sXLAy83l7EwdZjsYFbaq0A",
+        "review_count": 1517, "categories": [{"alias": "italian", "title": "Italian"}],
+        "rating": 4.5, "coordinates": {"latitude": 32.9522604664909, "longitude":
+        -96.8196190169884}, "transactions": ["delivery"], "price": "$$", "location":
+        {"address1": "5100 Belt Line Rd", "address2": "Ste 764", "address3": "", "city":
+        "Dallas", "zip_code": "75254", "country": "US", "state": "TX", "display_address":
+        ["5100 Belt Line Rd", "Ste 764", "Dallas, TX 75254"]}, "phone": "+19726619380",
+        "display_phone": "(972) 661-9380", "distance": 12714.58023836565}, {"id":
+        "EwkC_KHnPso8pFG7dIz8uw", "alias": "barsotti-s-dallas", "name": "Barsotti\u2019s",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/Yf18Fl3gFxnuzU8s79zK2g/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/barsotti-s-dallas?adjust_creative=sXLAy83l7EwdZjsYFbaq0A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=sXLAy83l7EwdZjsYFbaq0A",
+        "review_count": 30, "categories": [{"alias": "italian", "title": "Italian"}],
+        "rating": 4.0, "coordinates": {"latitude": 32.81989814004114, "longitude":
+        -96.80204080646376}, "transactions": [], "location": {"address1": "4208 Oak
+        Lawn Ave", "address2": "", "address3": null, "city": "Dallas", "zip_code":
+        "75219", "country": "US", "state": "TX", "display_address": ["4208 Oak Lawn
+        Ave", "Dallas, TX 75219"]}, "phone": "+12145224208", "display_phone": "(214)
+        522-4208", "distance": 2133.493805256042}, {"id": "hii4tBetn9AKXkgs3qw4Hg",
+        "alias": "ciao-by-civellos-dallas", "name": "Ciao! by Civello''s", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/bphoto/xMOv_RdnFPoVx0cEo33y-A/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/ciao-by-civellos-dallas?adjust_creative=sXLAy83l7EwdZjsYFbaq0A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=sXLAy83l7EwdZjsYFbaq0A",
+        "review_count": 21, "categories": [{"alias": "italian", "title": "Italian"}],
+        "rating": 5.0, "coordinates": {"latitude": 32.7985981, "longitude": -96.7788238},
+        "transactions": [], "price": "$", "location": {"address1": "1318 N Peak St",
+        "address2": "", "address3": "", "city": "Dallas", "zip_code": "75204", "country":
+        "US", "state": "TX", "display_address": ["1318 N Peak St", "Dallas, TX 75204"]},
+        "phone": "+12148272989", "display_phone": "(214) 827-2989", "distance": 4913.276491592934},
+        {"id": "ap1HHdSs9OZyZoe14558QA", "alias": "roccos-italian-cafe-richardson-2",
+        "name": "Rocco''s Italian Cafe", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/__FPfW_PEAJTNugw94xN2g/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/roccos-italian-cafe-richardson-2?adjust_creative=sXLAy83l7EwdZjsYFbaq0A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=sXLAy83l7EwdZjsYFbaq0A",
+        "review_count": 136, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "pizza", "title": "Pizza"}, {"alias": "chicken_wings", "title":
+        "Chicken Wings"}], "rating": 4.5, "coordinates": {"latitude": 32.9365128998704,
+        "longitude": -96.7208017408848}, "transactions": ["delivery", "pickup"], "price":
+        "$$", "location": {"address1": "908 Audelia Rd", "address2": "Ste 500", "address3":
+        null, "city": "Richardson", "zip_code": "75081", "country": "US", "state":
+        "TX", "display_address": ["908 Audelia Rd", "Ste 500", "Richardson, TX 75081"]},
+        "phone": "+14698868209", "display_phone": "(469) 886-8209", "distance": 13148.979828817412},
+        {"id": "DEbsQ0oo4s1FGfiwhKEGvQ", "alias": "taverna-dallas-2", "name": "Taverna",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/yxVPaVvgRymBrAScifz9nw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/taverna-dallas-2?adjust_creative=sXLAy83l7EwdZjsYFbaq0A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=sXLAy83l7EwdZjsYFbaq0A",
+        "review_count": 579, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "breakfast_brunch", "title": "Breakfast & Brunch"}, {"alias": "pizza",
+        "title": "Pizza"}], "rating": 4.0, "coordinates": {"latitude": 32.8239874953375,
+        "longitude": -96.7907707342891}, "transactions": ["delivery", "pickup"], "price":
+        "$$", "location": {"address1": "3312 Knox St", "address2": "", "address3":
+        "", "city": "Dallas", "zip_code": "75205", "country": "US", "state": "TX",
+        "display_address": ["3312 Knox St", "Dallas, TX 75205"]}, "phone": "+12145209933",
+        "display_phone": "(214) 520-9933", "distance": 1906.6824766994794}, {"id":
+        "r8znVB_xDZqUy8Gtn2GNlg", "alias": "roman-cucina-dallas", "name": "Roman Cucina",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/h98b2jzX-w2rlnnr66Jrng/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/roman-cucina-dallas?adjust_creative=sXLAy83l7EwdZjsYFbaq0A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=sXLAy83l7EwdZjsYFbaq0A",
+        "review_count": 845, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "cocktailbars", "title": "Cocktail Bars"}], "rating": 4.5, "coordinates":
+        {"latitude": 32.951004, "longitude": -96.77088}, "transactions": ["delivery"],
+        "price": "$$", "location": {"address1": "7989 Belt Line Rd", "address2": "Ste
+        315", "address3": "", "city": "Dallas", "zip_code": "75248", "country": "US",
+        "state": "TX", "display_address": ["7989 Belt Line Rd", "Ste 315", "Dallas,
+        TX 75248"]}, "phone": "+19727169950", "display_phone": "(972) 716-9950", "distance":
+        12753.647188877603}, {"id": "O8sGr3Co7K0EbvfcmdWCDw", "alias": "partenope-ristorante-dallas",
+        "name": "Partenope Ristorante", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/1bS5tfNv9_oB7a7k3IcQQw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/partenope-ristorante-dallas?adjust_creative=sXLAy83l7EwdZjsYFbaq0A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=sXLAy83l7EwdZjsYFbaq0A",
+        "review_count": 409, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "pizza", "title": "Pizza"}, {"alias": "wine_bars", "title": "Wine
+        Bars"}], "rating": 4.5, "coordinates": {"latitude": 32.78166731, "longitude":
+        -96.79555484}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
+        {"address1": "1903 Main St", "address2": "", "address3": null, "city": "Dallas",
+        "zip_code": "75201", "country": "US", "state": "TX", "display_address": ["1903
+        Main St", "Dallas, TX 75201"]}, "phone": "+12144636222", "display_phone":
+        "(214) 463-6222", "distance": 6396.900693786639}, {"id": "BNhV_ZpAEgJBRtHVluWZyA",
+        "alias": "via-triozzi-dallas", "name": "Via Triozzi", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/lZJ6PDStG3pp-yF2YGM5-A/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/via-triozzi-dallas?adjust_creative=sXLAy83l7EwdZjsYFbaq0A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=sXLAy83l7EwdZjsYFbaq0A",
+        "review_count": 52, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "desserts", "title": "Desserts"}, {"alias": "bars", "title": "Bars"}],
+        "rating": 4.5, "coordinates": {"latitude": 32.81247, "longitude": -96.77},
+        "transactions": [], "location": {"address1": "1806 Greenville Ave", "address2":
+        "", "address3": null, "city": "Dallas", "zip_code": "75206", "country": "US",
+        "state": "TX", "display_address": ["1806 Greenville Ave", "Dallas, TX 75206"]},
+        "phone": "+14698975679", "display_phone": "(469) 897-5679", "distance": 4108.306567049815},
+        {"id": "ZXXX6AtF1MNpRvMAFYWeAQ", "alias": "la-stella-cucina-verace-dallas",
+        "name": "La Stella Cucina Verace", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/3VYDsoKkgFY2FymY2ROhzA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/la-stella-cucina-verace-dallas?adjust_creative=sXLAy83l7EwdZjsYFbaq0A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=sXLAy83l7EwdZjsYFbaq0A",
+        "review_count": 132, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "wine_bars", "title": "Wine Bars"}, {"alias": "seafood", "title":
+        "Seafood"}], "rating": 4.5, "coordinates": {"latitude": 32.78957, "longitude":
+        -96.79777}, "transactions": [], "price": "$$$", "location": {"address1": "2330
+        Flora St", "address2": "Ste 150", "address3": null, "city": "Dallas", "zip_code":
+        "75201", "country": "US", "state": "TX", "display_address": ["2330 Flora St",
+        "Ste 150", "Dallas, TX 75201"]}, "phone": "+14696637800", "display_phone":
+        "(469) 663-7800", "distance": 5512.085279959154}, {"id": "weIG5K2RHzC-2JLe7t-ZVw",
+        "alias": "enoteca-italia-dallas", "name": "Enoteca Italia", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/g1DEbTuLe1kut395GrZ_-A/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/enoteca-italia-dallas?adjust_creative=sXLAy83l7EwdZjsYFbaq0A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=sXLAy83l7EwdZjsYFbaq0A",
+        "review_count": 173, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "salad", "title": "Salad"}, {"alias": "pizza", "title": "Pizza"}],
+        "rating": 4.5, "coordinates": {"latitude": 32.80871351161692, "longitude":
+        -96.80780121832396}, "transactions": [], "location": {"address1": "3102 Oak
+        Lawn Ave", "address2": "Ste 116", "address3": null, "city": "Dallas", "zip_code":
+        "75219", "country": "US", "state": "TX", "display_address": ["3102 Oak Lawn
+        Ave", "Ste 116", "Dallas, TX 75219"]}, "phone": "+19726852112", "display_phone":
+        "(972) 685-2112", "distance": 3440.1629546815025}, {"id": "qbt9LeiJJZVJ5dp43yJDlQ",
+        "alias": "mister-o1-dallas-dallas-3", "name": "Mister O1 Dallas", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/bphoto/871OqV6twXoaPX94T8DCIA/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/mister-o1-dallas-dallas-3?adjust_creative=sXLAy83l7EwdZjsYFbaq0A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=sXLAy83l7EwdZjsYFbaq0A",
+        "review_count": 265, "categories": [{"alias": "pizza", "title": "Pizza"},
+        {"alias": "italian", "title": "Italian"}, {"alias": "salad", "title": "Salad"}],
+        "rating": 4.5, "coordinates": {"latitude": 32.81448082396739, "longitude":
+        -96.8014862}, "transactions": [], "price": "$$", "location": {"address1":
+        "3838 Oak Lawn Ave", "address2": "Ste P175", "address3": "", "city": "Dallas",
+        "zip_code": "75219", "country": "US", "state": "TX", "display_address": ["3838
+        Oak Lawn Ave", "Ste P175", "Dallas, TX 75219"]}, "phone": "+12144324434",
+        "display_phone": "(214) 432-4434", "distance": 2732.679310955061}, {"id":
+        "dgZGYH-j75ZsecVDmeMaRw", "alias": "terillis-restaurant-and-bar-dallas-4",
+        "name": "Terilli''s Restaurant & Bar", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/hY41QPMMuD6ZNnKCHY5qrA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/terillis-restaurant-and-bar-dallas-4?adjust_creative=sXLAy83l7EwdZjsYFbaq0A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=sXLAy83l7EwdZjsYFbaq0A",
+        "review_count": 800, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "salad", "title": "Salad"}, {"alias": "seafood", "title": "Seafood"}],
+        "rating": 4.0, "coordinates": {"latitude": 32.82324633691255, "longitude":
+        -96.77044414211112}, "transactions": ["delivery", "pickup"], "price": "$$",
+        "location": {"address1": "2815 Greenville Ave", "address2": null, "address3":
+        "", "city": "Dallas", "zip_code": "75206", "country": "US", "state": "TX",
+        "display_address": ["2815 Greenville Ave", "Dallas, TX 75206"]}, "phone":
+        "+12148273993", "display_phone": "(214) 827-3993", "distance": 3315.294388363296},
+        {"id": "Js9syfF2RofFMo7qrd-CAg", "alias": "pane-vino-osteria-dallas", "name":
+        "Pane Vino Osteria", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/66tWzEaR-40Vo19xE-A87g/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/pane-vino-osteria-dallas?adjust_creative=sXLAy83l7EwdZjsYFbaq0A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=sXLAy83l7EwdZjsYFbaq0A",
+        "review_count": 569, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "wine_bars", "title": "Wine Bars"}, {"alias": "seafood", "title":
+        "Seafood"}], "rating": 4.5, "coordinates": {"latitude": 32.953497, "longitude":
+        -96.824893}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
+        "5000 Belt Line Rd", "address2": "Ste 300", "address3": null, "city": "Dallas",
+        "zip_code": "75254", "country": "US", "state": "TX", "display_address": ["5000
+        Belt Line Rd", "Ste 300", "Dallas, TX 75254"]}, "phone": "+14696771536", "display_phone":
+        "(469) 677-1536", "distance": 12928.198742618051}, {"id": "pY_HNCgc1uksUb9d25lWyQ",
+        "alias": "fachini-dallas", "name": "Fachini", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/FHT6gdx1Lue3WL7Xq5Xo3Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/fachini-dallas?adjust_creative=sXLAy83l7EwdZjsYFbaq0A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=sXLAy83l7EwdZjsYFbaq0A",
+        "review_count": 201, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "steak", "title": "Steakhouses"}, {"alias": "seafood", "title":
+        "Seafood"}], "rating": 4.0, "coordinates": {"latitude": 32.836037, "longitude":
+        -96.8067158}, "transactions": ["delivery", "pickup"], "price": "$$$", "location":
+        {"address1": "33A Highland Park Village", "address2": "", "address3": null,
+        "city": "Dallas", "zip_code": "75205", "country": "US", "state": "TX", "display_address":
+        ["33A Highland Park Village", "Dallas, TX 75205"]}, "phone": "+12148389688",
+        "display_phone": "(214) 838-9688", "distance": 667.0728322884548}, {"id":
+        "4NfK0LMcrkc1dR8ltxYa5Q", "alias": "gallo-nero-dallas-3", "name": "Gallo Nero",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/QlSihRIEdAJyVjrLxIVtTw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/gallo-nero-dallas-3?adjust_creative=sXLAy83l7EwdZjsYFbaq0A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=sXLAy83l7EwdZjsYFbaq0A",
+        "review_count": 268, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "pizza", "title": "Pizza"}, {"alias": "desserts", "title": "Desserts"}],
+        "rating": 4.0, "coordinates": {"latitude": 32.81368277190431, "longitude":
+        -96.77052260370654}, "transactions": ["delivery", "pickup"], "price": "$$",
+        "location": {"address1": "1905 Greenville Ave", "address2": null, "address3":
+        "", "city": "Dallas", "zip_code": "75206", "country": "US", "state": "TX",
+        "display_address": ["1905 Greenville Ave", "Dallas, TX 75206"]}, "phone":
+        "+19725980800", "display_phone": "(972) 598-0800", "distance": 3977.138471597032},
+        {"id": "z4DT5Ks605zY-dEb8tr52w", "alias": "400-gradi-dallas-3", "name": "400
+        Gradi", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/iLwJy_DYSPQzjX6Nos4ssA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/400-gradi-dallas-3?adjust_creative=sXLAy83l7EwdZjsYFbaq0A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=sXLAy83l7EwdZjsYFbaq0A",
+        "review_count": 245, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "pizza", "title": "Pizza"}, {"alias": "wine_bars", "title": "Wine
+        Bars"}], "rating": 4.5, "coordinates": {"latitude": 32.786876573659484, "longitude":
+        -96.79876229717948}, "transactions": ["delivery", "pickup"], "price": "$$",
+        "location": {"address1": "2000 Ross Ave", "address2": "Ste 140", "address3":
+        "", "city": "Dallas", "zip_code": "75201", "country": "US", "state": "TX",
+        "display_address": ["2000 Ross Ave", "Ste 140", "Dallas, TX 75201"]}, "phone":
+        "+19728509053", "display_phone": "(972) 850-9053", "distance": 5803.059946471505},
+        {"id": "v9FdUfWaB3NoD7Qsr7rKFQ", "alias": "north-italia-dallas-4", "name":
+        "North Italia", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/mKleHCvN-17paJC8AAIZzA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/north-italia-dallas-4?adjust_creative=sXLAy83l7EwdZjsYFbaq0A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=sXLAy83l7EwdZjsYFbaq0A",
+        "review_count": 487, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "pizza", "title": "Pizza"}, {"alias": "cocktailbars", "title": "Cocktail
+        Bars"}], "rating": 4.0, "coordinates": {"latitude": 32.78897056561017, "longitude":
+        -96.80589518647668}, "transactions": ["delivery"], "price": "$$", "location":
+        {"address1": "2301 N Akard St", "address2": "Ste 280", "address3": null, "city":
+        "Dallas", "zip_code": "75201", "country": "US", "state": "TX", "display_address":
+        ["2301 N Akard St", "Ste 280", "Dallas, TX 75201"]}, "phone": "+19726193770",
+        "display_phone": "(972) 619-3770", "distance": 5590.318046851123}, {"id":
+        "70gyfpHU47dCrVP8WNIbkA", "alias": "nonna-restaurant-dallas", "name": "Nonna
+        Restaurant", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/GAz0ZT3SvByQnqtGjLTCcw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/nonna-restaurant-dallas?adjust_creative=sXLAy83l7EwdZjsYFbaq0A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=sXLAy83l7EwdZjsYFbaq0A",
+        "review_count": 335, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "desserts", "title": "Desserts"}, {"alias": "cocktailbars", "title":
+        "Cocktail Bars"}], "rating": 4.0, "coordinates": {"latitude": 32.8209289,
+        "longitude": -96.8152897}, "transactions": ["pickup"], "price": "$$$", "location":
+        {"address1": "4115 Lomo Alto Dr", "address2": "", "address3": "", "city":
+        "Dallas", "zip_code": "75219", "country": "US", "state": "TX", "display_address":
+        ["4115 Lomo Alto Dr", "Dallas, TX 75219"]}, "phone": "+12145211800", "display_phone":
+        "(214) 521-1800", "distance": 2420.8877724847575}, {"id": "f5pQMCRzjjPsgx7shGvTGQ",
+        "alias": "two-guys-from-italy-dallas", "name": "Two Guys From Italy", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/bphoto/MaLzel7Mi-FrlPmthgpzKw/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/two-guys-from-italy-dallas?adjust_creative=sXLAy83l7EwdZjsYFbaq0A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=sXLAy83l7EwdZjsYFbaq0A",
+        "review_count": 540, "categories": [{"alias": "pizza", "title": "Pizza"},
+        {"alias": "italian", "title": "Italian"}], "rating": 4.0, "coordinates": {"latitude":
+        32.9079246520996, "longitude": -96.872802734375}, "transactions": ["pickup"],
+        "price": "$$", "location": {"address1": "11637 Webb Chapel Rd", "address2":
+        "", "address3": "", "city": "Dallas", "zip_code": "75229", "country": "US",
+        "state": "TX", "display_address": ["11637 Webb Chapel Rd", "Dallas, TX 75229"]},
+        "phone": "+19722476814", "display_phone": "(972) 247-6814", "distance": 10216.535832122878}],
+        "total": 1900, "region": {"center": {"longitude": -96.800537109375, "latitude":
+        32.839043482398054}}}'
+  recorded_at: Mon, 15 Jan 2024 17:27:12 GMT
+recorded_with: VCR 6.2.0
