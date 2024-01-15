@@ -15,6 +15,7 @@ Rails.application.routes.draw do
 
       resources :users, only: [:create]
       resources :munchies, only: [:index]
+      resources :sessions, only: [:create]
     end
   end
   
