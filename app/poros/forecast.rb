@@ -15,33 +15,38 @@ class Forecast
         condition: forecast_data[:current][:condition][:text],
         icon: forecast_data[:current][:condition][:icon]
   }
-  @daily_weather = []
-  @hourly_weather = []
+  if forecast_data[:forecast] && forecast_data[:forecast][:forecastday].is_a?(Array)
+    @daily_weather = []
+    @hourly_weather = []
+  end
 
-    # Fill out daily_weather array
-    forecast_data[:forecast][:forecastday].each do |day|
-      daily_weather_attributes = {
-        date: day[:date],
-        sunrise: day[:astro][:sunrise],
-        sunset: day[:astro][:sunset],
-        max_temp: day[:day][:maxtemp_f],
-        min_temp: day[:day][:mintemp_f],
-        condition: day[:day][:condition][:text],
-        icon: day[:day][:condition][:icon]
-      }
-      @daily_weather << daily_weather_attributes
+    # Fill out daily_weather array if present
+    if forecast_data[:forecast] && forecast_data[:forecast][:forecastday].is_a?(Array)
+      forecast_data[:forecast][:forecastday].each do |day|
+        daily_weather_attributes = {
+          date: day[:date],
+          sunrise: day[:astro][:sunrise],
+          sunset: day[:astro][:sunset],
+          max_temp: day[:day][:maxtemp_f],
+          min_temp: day[:day][:mintemp_f],
+          condition: day[:day][:condition][:text],
+          icon: day[:day][:condition][:icon]
+        }
+        @daily_weather << daily_weather_attributes
+      end
     end
 
-    # Fill out hourly_weather array
-
-    forecast_data[:forecast][:forecastday][0][:hour].each do |hour|
-      hourly_weather_attributes = {
-        time: hour[:time],
-        temperature: hour[:temp_f],
-        conditions: hour[:condition][:text],
-        icon: hour[:condition][:icon]
-      }
-      @hourly_weather << hourly_weather_attributes
+    # Fill out hourly_weather array if present
+    if forecast_data[:forecast] && forecast_data[:forecast][:forecastday].is_a?(Array) && forecast_data[:forecast][:forecastday][0][:hour].is_a?(Array)
+      forecast_data[:forecast][:forecastday][0][:hour].each do |hour|
+        hourly_weather_attributes = {
+          time: hour[:time],
+          temperature: hour[:temp_f],
+          conditions: hour[:condition][:text],
+          icon: hour[:condition][:icon]
+        }
+        @hourly_weather << hourly_weather_attributes
+      end
     end
   end
 end

@@ -8,4 +8,13 @@ class ForecastFacade
     Forecast.new(forecast)
   end
 
+  def self.current_forcast(location)
+    json_response = LocationService.get_coordinates(location)
+    coordinates = json_response[:results][0][:locations][0]
+    latitude = coordinates[:latLng][:lat]
+    longitude = coordinates[:latLng][:lng]
+    forecast = WeatherService.get_current_weather(latitude, longitude)
+    Forecast.new(forecast)
+  end
+
 end

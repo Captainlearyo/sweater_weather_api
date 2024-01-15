@@ -12,10 +12,10 @@ class WeatherService
   end
 
 
-  # def self.get_current_weather(lat, lon)
-  #   q ="#{lat},#{lon}"
-  #   get_url("current.json?q=#{(q)}")
-  # end
+  def self.get_current_weather(lat, lon)
+    q ="#{lat},#{lon}"
+    get_url("current.json?q=#{(q)}")
+  end
 
   def self.get_forecast_weather(lat, lon)
     q ="#{lat},#{lon}"

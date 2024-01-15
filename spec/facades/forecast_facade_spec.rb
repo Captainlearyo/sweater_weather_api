@@ -21,4 +21,22 @@ RSpec.describe 'Forcast Facade', :vcr do
     
       
   end
+
+  it 'should give current_forcast data when given city and state' do
+    location = "Dallas,TX"
+
+    result = ForecastFacade.current_forcast(location)
+    
+    expect(result).to be_a(Forecast)
+    expect(result.current_weather[:last_updated]).to be_a(String)
+
+
+    
+
+    expect(result.daily_weather).to be_nil
+    expect(result.hourly_weather).to be_nil
+
+    
+      
+  end
 end
