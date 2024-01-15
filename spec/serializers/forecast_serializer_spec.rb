@@ -39,7 +39,5 @@ RSpec.describe ForecastSerializer do
     expect(hourly_weather[:temperature]).to be_a(Float)
     expect(hourly_weather[:conditions]).to be_a(String)
     expect(hourly_weather[:icon]).to be_a(String)
-    
-
   end
 end

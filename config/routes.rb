@@ -12,8 +12,9 @@ Rails.application.routes.draw do
     namespace :v0 do
       resources :forecast, only: [:index]
       get '/api/v0/forecast', to: 'api/v0/forecast#index'
-      
+
       resources :users, only: [:create]
+      resources :munchies, only: [:index]
     end
   end
   
