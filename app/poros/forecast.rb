@@ -19,7 +19,7 @@ class Forecast
   @hourly_weather = []
 
     # Fill out daily_weather array
-    forecast_data[:forecast][:forecastday].each do |day|
+    forecast_data[:forecast][:forecastday].take(5).each do |day|
       daily_weather_attributes = {
         date: day[:date],
         sunrise: day[:astro][:sunrise],
