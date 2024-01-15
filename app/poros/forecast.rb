@@ -22,7 +22,7 @@ class Forecast
 
     # Fill out daily_weather array if present
     if forecast_data[:forecast] && forecast_data[:forecast][:forecastday].is_a?(Array)
-      forecast_data[:forecast][:forecastday].each do |day|
+      forecast_data[:forecast][:forecastday].take(5).each do |day|
         daily_weather_attributes = {
           date: day[:date],
           sunrise: day[:astro][:sunrise],
