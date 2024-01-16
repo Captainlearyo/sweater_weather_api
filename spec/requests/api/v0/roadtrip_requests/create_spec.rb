@@ -37,7 +37,7 @@ RSpec.describe "Create roadtrip" do
     expect(weather_at_eta).to have_key(:condition)
   end
 
-  it "returns 401 Unauthorized when an invalid API key is provided", :vcr do
+  it "Sad Path returns 401 Unauthorized when an invalid API key is provided", :vcr do
     request_body = {
       origin: "Cincinatti,OH",
       destination: "Chicago,IL",
@@ -49,7 +49,7 @@ RSpec.describe "Create roadtrip" do
     expect(response).to have_http_status(401)
   end
 
-  it "returns 401 Unauthorized when no API key is provided", :vcr do
+  it "Sad Path returns 401 Unauthorized when no API key is provided", :vcr do
     request_body = {
       origin: "Cincinatti,OH",
       destination: "Chicago,IL",
@@ -61,7 +61,7 @@ RSpec.describe "Create roadtrip" do
     expect(response).to have_http_status(401)
   end
 
-  it "returns impossible route for bad routes", :vcr do
+  it "Sad Path returns impossible route for bad routes", :vcr do
     request_body = {
       origin: "Cincinatti,OH",
       destination: "London, England",
