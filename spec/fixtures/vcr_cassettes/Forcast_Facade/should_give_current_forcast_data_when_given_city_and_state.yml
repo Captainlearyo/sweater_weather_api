@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 15 Jan 2024 17:27:30 GMT
+      - Tue, 16 Jan 2024 22:31:47 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -29,17 +29,17 @@ http_interactions:
       X-Ratelimit-Limit-2628000:
       - '1000000000'
       X-Ratelimit-Remaining-2628000:
-      - '999999936'
+      - '999999812'
       Ratelimit-Limit:
       - '1000000000'
       Ratelimit-Remaining:
-      - '999999936'
+      - '999999812'
       Ratelimit-Reset:
-      - '232350'
+      - '127693'
       X-Powered-By:
       - MapQuest
       X-Request-Id:
-      - 5c4b3630-b3cb-11ee-bad0-91ce77d8f7aa
+      - '08b336e0-b4bf-11ee-a844-db888e23fefa'
       Access-Control-Allow-Origin:
       - "*"
       Etag:
@@ -48,7 +48,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyNCBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDI0IE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sIm9wdGlvbnMiOnsibWF4UmVzdWx0cyI6LTEsImlnbm9yZUxhdExuZ0lucHV0IjpmYWxzZX0sInJlc3VsdHMiOlt7InByb3ZpZGVkTG9jYXRpb24iOnsibG9jYXRpb24iOiJEYWxsYXMsVFgifSwibG9jYXRpb25zIjpbeyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiRGFsbGFzIiwiYWRtaW5BcmVhNVR5cGUiOiJDaXR5IiwiYWRtaW5BcmVhNCI6IkRhbGxhcyIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6IlRYIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhBWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0IjozMi43NzgyMiwibG5nIjotOTYuNzk1MTJ9LCJkaXNwbGF5TGF0TG5nIjp7ImxhdCI6MzIuNzc4MjIsImxuZyI6LTk2Ljc5NTEyfSwibWFwVXJsIjoiIn1dfV19
-  recorded_at: Mon, 15 Jan 2024 17:26:01 GMT
+  recorded_at: Tue, 16 Jan 2024 22:30:17 GMT
 - request:
     method: get
     uri: http://api.weatherapi.com/v1/current.json?key=6af306557f524973a3010737240701&q=32.77822,-96.79512
@@ -68,7 +68,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 15 Jan 2024 17:27:30 GMT
+      - Tue, 16 Jan 2024 22:31:47 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -78,7 +78,7 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Server:
-      - BunnyCDN-IL1-845
+      - BunnyCDN-IL1-871
       Cdn-Pullzone:
       - '93447'
       Cdn-Uid:
@@ -90,11 +90,11 @@ http_interactions:
       Cache-Control:
       - public, max-age=180
       Via:
-      - 1.1 haproxy-api-1 (Varnish/7.3)
+      - 1.1 varnish (Varnish/6.0)
       X-Weatherapi-Qpm-Left:
-      - '4999965'
+      - '4999936'
       X-Varnish:
-      - '123767986409'
+      - '414122172'
       Cdn-Proxyver:
       - '1.04'
       Cdn-Requestpullsuccess:
@@ -102,20 +102,20 @@ http_interactions:
       Cdn-Requestpullcode:
       - '200'
       Cdn-Cachedat:
-      - 01/15/2024 17:24:43
+      - 01/16/2024 22:31:47
       Cdn-Edgestorageid:
       - '940'
       Cdn-Status:
       - '200'
       Cdn-Requestid:
-      - bfc9fa1770e25c787f808517a7bfac31
+      - 36dd6be5bcaa4ebf49814e0d7360d2e8
       Cdn-Cache:
-      - HIT
+      - EXPIRED
     body:
       encoding: ASCII-8BIT
       string: '{"location":{"name":"Dallas","region":"Texas","country":"United States
-        of America","lat":32.78,"lon":-96.8,"tz_id":"America/Chicago","localtime_epoch":1705339445,"localtime":"2024-01-15
-        11:24"},"current":{"last_updated_epoch":1705338900,"last_updated":"2024-01-15
-        11:15","temp_c":-10.6,"temp_f":12.9,"is_day":1,"condition":{"text":"Overcast","icon":"//cdn.weatherapi.com/weather/64x64/day/122.png","code":1009},"wind_mph":11.9,"wind_kph":19.1,"wind_degree":360,"wind_dir":"N","pressure_mb":1027.0,"pressure_in":30.33,"precip_mm":0.0,"precip_in":0.0,"humidity":77,"cloud":100,"feelslike_c":-17.9,"feelslike_f":-0.2,"vis_km":16.0,"vis_miles":9.0,"uv":2.0,"gust_mph":16.3,"gust_kph":26.3}}'
-  recorded_at: Mon, 15 Jan 2024 17:26:01 GMT
+        of America","lat":32.78,"lon":-96.8,"tz_id":"America/Chicago","localtime_epoch":1705444267,"localtime":"2024-01-16
+        16:31"},"current":{"last_updated_epoch":1705443300,"last_updated":"2024-01-16
+        16:15","temp_c":-3.0,"temp_f":26.6,"is_day":1,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png","code":1000},"wind_mph":5.6,"wind_kph":9.0,"wind_degree":330,"wind_dir":"NNW","pressure_mb":1030.0,"pressure_in":30.42,"precip_mm":0.0,"precip_in":0.0,"humidity":28,"cloud":0,"feelslike_c":-7.2,"feelslike_f":19.0,"vis_km":21.0,"vis_miles":13.0,"uv":2.0,"gust_mph":8.0,"gust_kph":12.9}}'
+  recorded_at: Tue, 16 Jan 2024 22:30:17 GMT
 recorded_with: VCR 6.2.0

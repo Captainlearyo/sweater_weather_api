@@ -23,4 +23,20 @@ RSpec.describe 'API call', :vcr do
       expect(latitude).to be_a(Float)
       expect(longitude).to be_a(Float)
     end
+
+    it 'Happy_path get_travel_time for two givin cities', :vcr do
+      start_location = "Dallas,TX"
+      end_location = "Austin,TX"
+
+      response = LocationService.get_travel_time(start_location, end_location)
+      expect(response).to be_a(String)
+    end
+
+    it 'Sad_path get_travel_distance for two givin cities', :vcr do
+      start_location = "Dallas,TX"
+      end_location = "London, England"
+
+      response = LocationService.get_travel_time(start_location, end_location)
+      expect(response).to eq("impossible route")
+    end
 end
