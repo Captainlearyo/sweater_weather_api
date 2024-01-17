@@ -75,6 +75,5 @@ RSpec.describe "Create roadtrip" do
     json_response = JSON.parse(response.body, symbolize_names: true)
     #binding.pry
     expect(json_response[:data][:attributes][:travel_time]).to eq("impossible route")
-
   end
 end
